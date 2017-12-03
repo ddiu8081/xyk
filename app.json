@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/addCard",
+    "pages/pick/pickCard"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#fff",
+    "navigationBarTitleText": "柚子拾物",
+    "navigationBarTextStyle": "black"
+  }
+}

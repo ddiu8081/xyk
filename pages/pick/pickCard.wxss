@@ -1,0 +1,69 @@
+/* pages/pick/pickCard.wxss */
+
+image {
+  width: 100%;
+  border-radius: 10rpx;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.input-card {
+  font-size: 18px;
+  background-color: #f9f9f9;
+  margin-top: 30rpx;
+  margin-bottom: 50rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #d9d9d9;
+}
+
+.input-line {
+  padding: 8rpx 30rpx;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border-top: 1rpx solid #d9d9d9;
+}
+
+.input-line:first-child {
+  border: none;
+}
+
+.selection {
+  font-size: 15px;
+  font-weight: 400;
+  position: relative;
+  display: table;
+  overflow: hidden;
+  width: 100%;
+  table-layout: fixed;
+  border: 1px solid #90b44b;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.selection-item {
+  line-height: 38px;
+  display: table-cell;
+  overflow: hidden;
+  width: 1%;
+  -webkit-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #90b44b;
+  border-color: #90b44b;
+  border-left: 1px solid #90b44b;
+}
+
+.selection-item:first-child {
+  border-left-width: 0;
+}
+
+.selection-item.active {
+  color: #fff;
+  background-color: #90b44b;
+}

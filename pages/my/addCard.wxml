@@ -1,0 +1,35 @@
+<!--pages/my/addCard.wxml-->
+<view class="container">
+  <image mode="widthFix" src='{{ imgURL }}'></image>
+  <form bindsubmit="formSubmit">
+    <view class="input-card">
+      <view class="input-line">
+        <view class="weui-label">卡号</view>
+        <view class="weui-cell__bd">
+          <input name="card" type="number" class="weui-input" placeholder="请输入卡号" value="{{ card }}"/>
+        </view>
+      </view>
+      <view class="input-line">
+        <view class="weui-label">姓名</view>
+        <view class="weui-cell__bd">
+          <input name="name" class="weui-input" placeholder="请输入姓名" value="{{ name }}"/>
+        </view>
+      </view>
+      <view class="input-line">
+        <view class="weui-label">手机号</view>
+        <view class="weui-cell__bd">
+          <input name="phone" type="number" class="weui-input" placeholder="捡到卡时将发送短信通知" value="{{ phone }}"/>
+        </view>
+      </view>
+      <view class="input-line">
+        <view class="weui-label">邮箱</view>
+        <view class="weui-cell__bd">
+          <input name="email" class="weui-input" placeholder="捡到卡时将发送邮件通知" value="{{ email }}"/>
+        </view>
+      </view>
+    </view>
+
+    <button formType="submit" type="primary" class="button">确定</button>
+    <button bindtap='back' class="button">返回</button>
+  </form>
+</view>

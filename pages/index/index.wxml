@@ -1,0 +1,34 @@
+ <!--index.wxml-->
+<view class="bg">
+  <!-- <view class="title">柚子拾物</view> -->
+  <image src="../../assets/images/logo.png" class="logo" mode="aspectFit"></image>
+  <view class="index-container">
+    <!-- <button class="weui-btn" type="primary">页面主操作 Normal</button>
+    <button class="weui-btn" type="primary" disabled="true">页面主操作 Disabled</button> -->
+    <navigator url="../pick/pickCard" class="index_btn" hover-class="cell-active">
+      <view class="weui-flex__item">
+        <text class="placeholder">拾到了卡</text>
+      </view>
+      <view>
+        <image src="../../assets/images/upload.png"></image>
+      </view>
+    </navigator>
+    <view class='hr'></view>
+    <view class='index_title'>我的卡</view>
+    <navigator url="../my/addCard?type=stu" class="card_btn row-2 {{ stu ? 'active' : ''}}" hover-class="cell-active">
+      <view class="weui-flex__item">
+        <text class="placeholder">校园卡</text>
+      </view>
+    </navigator>
+    <navigator url="../my/addCard?type=idcard" class="card_btn row-2 {{ idcard ? 'active' : ''}}" hover-class="cell-active">
+      <view class="weui-flex__item">
+        <text class="placeholder">身份证</text>
+      </view>
+    </navigator>
+    <navigator url="../my/addCard?type=bank" class="card_btn row-2 {{ bank ? 'active' : ''}}" hover-class="cell-active">
+      <view class="weui-flex__item">
+        <text class="placeholder">银行卡</text>
+      </view>
+    </navigator>
+  </view>
+</view>

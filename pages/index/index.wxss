@@ -1,0 +1,80 @@
+page {
+  background-color: #f9f9f9;
+} 
+.bg {
+  display: block;
+  padding-top:240rpx;
+} 
+.title {
+  text-align: center;
+  width: 40%;
+  font-size: 24px;
+  color: #E9A368;
+}
+.logo {
+  text-align: center;
+  width: 400rpx;
+  height: 80rpx;
+  margin: 0 175rpx;
+}
+.index-container {
+  margin: 40rpx;
+  padding: 40rpx;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius:5px;
+}
+
+.index_title {
+  font-size: 20px;
+  margin: 10rpx;
+}
+
+.index_btn {
+  height:auto;
+  color:#FFFFFF;
+  background-color:#90B44B;
+  position:relative;
+  display:flex;
+  padding-left:24px;
+  padding-right:24px;
+  padding-top:20px;
+  padding-bottom:20px;
+  font-size:18px;
+  margin-top: 30rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  text-align:center;
+  border-radius:5px;
+  align-items:center;
+}
+.index_btn image {
+  width:30px;
+  height:30px;
+  margin: 0 20px;
+}
+.index_btn:first-child{
+  margin-top: 0;
+}
+
+.hr {
+    border-bottom: #EBF2F6 1px solid;
+    margin: 40rpx 20rpx;
+}
+
+.card_btn {
+  color:#fff;
+  background-color:#bbb;
+  position:relative;
+  padding-top:20px;
+  padding-bottom:20px;
+  font-size:18px;
+  text-align:center;
+  border-radius:5px;
+  display: inline-block;
+}
+
+.card_btn.active {
+  background-color:#90B44B;
+}

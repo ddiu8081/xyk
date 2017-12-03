@@ -1,0 +1,37 @@
+/**app.wxss**/
+@import 'assets/style/weui.wxss';
+
+button {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.weui-label {
+  width: 150rpx;
+}
+
+button[type="primary"] {
+  color:#FFFFFF;
+  background-color:#90B44B;
+}
+.button-hover[type="primary"] {
+  color:#FFFFFF;
+  background-color:#7BA23F;
+}
+.container {
+  padding: 60rpx;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.row-2 {
+  display: inline-block;
+  width: 275rpx;
+  margin:10rpx 10rpx;
+}
+
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
