@@ -11,6 +11,7 @@ App({
   globalData: {
     recordID: null,
     tableId_user: 3511,
-    tableId_pick: 3702
+    tableId_pick: 3702,
+    token: null
   }
 })

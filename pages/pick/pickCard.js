@@ -46,6 +46,7 @@ Page({
           pick.set('card_phone', query_res.data.objects[0].phone)
           pick.set('card_email', query_res.data.objects[0].email)
           pick.set('card_name', query_res.data.objects[0].name)
+          pick.set('card_formid', query_res.data.objects[0].formid)
 
           console.log("matched.")
         }
@@ -54,13 +55,14 @@ Page({
           console.log(create_res.data)
           //调用短信接口
           wx.request({
-            url: 'https://ddiu.site/xyk/pickCard.php', //仅为示例，并非真实的接口地址
+            url: 'https://ddiu.site/xyk/pickCard.php',
             data: create_res.data,
             header: {
               'content-type': 'application/json' // 默认值
             },
-            success: function (res) {
-              console.log(res.data)
+            method: 'POST',
+            success: function (token) {
+              console.log(token)
             }
           })
           wx.showModal({

@@ -1,7 +1,7 @@
 <!--pages/my/addCard.wxml-->
 <view class="container">
   <image mode="widthFix" src='{{ imgURL }}'></image>
-  <form bindsubmit="formSubmit">
+  <form report-submit="true" bindsubmit="formSubmit">
     <view class="input-card">
       <view class="input-line">
         <view class="weui-label">卡号</view>

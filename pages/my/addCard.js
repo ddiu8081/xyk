@@ -28,7 +28,7 @@ Page({
   formSubmit: function (e) {
     var that = this
     console.log('表单接收：')
-    console.log(e.detail.value)
+    console.log(e.detail)
     if (e.detail.value.card && e.detail.value.name) {
 
       let tableID = getApp().globalData.tableId_user
@@ -41,6 +41,7 @@ Page({
       user.set('name', e.detail.value.name)
       user.set('phone', e.detail.value.phone)
       user.set('email', e.detail.value.email)
+      user.set('formid', e.detail.formId)
 
       user.update().then((res) => {
         wx.showModal({
